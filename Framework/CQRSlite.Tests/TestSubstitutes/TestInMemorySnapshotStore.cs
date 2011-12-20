@@ -4,7 +4,7 @@ using CQRSlite.Eventing;
 
 namespace CQRSlite.Tests.TestSubstitutes
 {
-    public class TestInMemorySnapshotStore : ISnapshotStore 
+    public class TestInMemorySnapshotStore : ISnapshotStore
     {
         public Snapshot Get(Guid id)
         {

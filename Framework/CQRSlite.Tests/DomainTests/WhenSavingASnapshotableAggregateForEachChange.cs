@@ -13,7 +13,7 @@ namespace CQRSlite.Tests.DomainTests
         private Repository<TestSnapshotAggreagate> _rep;
 
 		[SetUp]
-        public void Setup()        
+        public void Setup()
 		{
             IEventStore eventStore = new TestInMemoryEventStore();
             var eventpubliser = new TestEventPublisher();

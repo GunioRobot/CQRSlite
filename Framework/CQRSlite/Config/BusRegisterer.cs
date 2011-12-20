@@ -11,7 +11,7 @@ namespace CQRSlite.Config
         public void Register(IServiceLocator serviceLocator, params Type[] typesFromAssemblyContainingMessages)
         {
             var bus = serviceLocator.GetInstance<IHandleRegister>();
-            
+
             foreach (var typesFromAssemblyContainingMessage in typesFromAssemblyContainingMessages)
             {
                 Assembly executorsAssembly = typesFromAssemblyContainingMessage.Assembly;
@@ -19,7 +19,7 @@ namespace CQRSlite.Config
                     .GetTypes()
                     .Select(t => new { Type = t, Interfaces = ResolveMessageHandlerInterface(t) })
                     .Where(e => e.Interfaces != null && e.Interfaces.Count() > 0);
-                
+
                 foreach (var executorType in executorTypes)
                 {
                     object executorInstance = serviceLocator.GetInstance(executorType.Type);

@@ -4,7 +4,7 @@ namespace CQRSlite.Tests.TestSubstitutes
 {
     public class TestAggregateDidSomething : Event
     {
-        
+
     }
     public class TestAggregateDidSomeethingElse : Event
     {

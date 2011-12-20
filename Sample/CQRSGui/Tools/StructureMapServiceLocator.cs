@@ -20,8 +20,8 @@ namespace CQRSGui.Tools
         {
             if (serviceType == null) return null;
 
-            return string.IsNullOrEmpty(key) 
-                ? _container.GetInstance(serviceType) 
+            return string.IsNullOrEmpty(key)
+                ? _container.GetInstance(serviceType)
                 : _container.GetInstance(serviceType, key);
         }
 

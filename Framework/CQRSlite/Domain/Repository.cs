@@ -34,12 +34,12 @@ namespace CQRSlite.Domain
                 _publisher.Publish(@event);
             }
 
-            if (ShouldMakeSnapShot(aggregate, expectedVersion)) 
+            if (ShouldMakeSnapShot(aggregate, expectedVersion))
                 MakeSnapshot(aggregate, version);
             aggregate.MarkChangesAsCommitted();
         }
 
-        private void MakeSnapshot(T aggregate, int version) 
+        private void MakeSnapshot(T aggregate, int version)
         {
             var snapshot = aggregate.AsDynamic().GetSnapshot();
             snapshot.RealObject.Version = version;
@@ -87,7 +87,7 @@ namespace CQRSlite.Domain
             return version;
         }
 
-        private T CreateAggregate() 
+        private T CreateAggregate()
         {
             T obj;
             try

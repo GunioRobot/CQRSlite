@@ -48,7 +48,7 @@ namespace CQRSlite.Tests.DomainTests
         {
             Assert.Throws<ConcurrencyException>(() =>  _rep.Save(_aggregate, 1));
         }
-        
+
         [Test]
         public void ShouldPublishEvents()
         {

@@ -24,5 +24,5 @@ namespace CQRSlite.Tests.EventingTests
             var result = _snapshotstore.Get(_snapshot.Id);
             Assert.Null(result);
         }
-    } 
+    }
 }

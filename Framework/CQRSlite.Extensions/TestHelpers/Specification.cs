@@ -9,7 +9,7 @@ using NUnit.Framework;
 namespace CQRSlite.Extensions.TestHelpers
 {
 	[TestFixture]
-    public abstract class Specification<TAggreagate, THandler, TCommand> 
+    public abstract class Specification<TAggreagate, THandler, TCommand>
         where TAggreagate: AggregateRoot
         where THandler : class, IHandles<TCommand>
         where TCommand : Command
@@ -24,7 +24,7 @@ namespace CQRSlite.Extensions.TestHelpers
         protected Snapshot Snapshot { get; set; }
         protected IList<EventDescriptor> EventDescriptors { get; set; }
         protected IList<Event> PublishedEvents { get; set; }
-		
+
 		[SetUp]
         public void Run()
         {

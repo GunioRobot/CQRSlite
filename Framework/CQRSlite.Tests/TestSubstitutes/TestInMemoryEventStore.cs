@@ -5,7 +5,7 @@ using CQRSlite.Eventing;
 
 namespace CQRSlite.Tests.TestSubstitutes
 {
-    public class TestInMemoryEventStore : IEventStore 
+    public class TestInMemoryEventStore : IEventStore
     {
         private readonly List<EventDescriptor> _list = new List<EventDescriptor>();
 

@@ -14,16 +14,16 @@
             <div id="title">
                 <h1>CQRS example</h1>
             </div>
-              
+
             <div id="logindisplay">
-            </div> 
-            
+            </div>
+
             <div id="menucontainer">
-            
-                <ul id="menu">              
+
+                <ul id="menu">
                     <li><%: Html.ActionLink("Home", "Index", "Home")%></li>
                 </ul>
-            
+
             </div>
         </div>
 

@@ -11,7 +11,7 @@ namespace CQRSlite.Tests.DomainTests
     {
 
         private Repository<TestAggregate> _rep;
-		
+
 		[SetUp]
         public void Setup()
         {

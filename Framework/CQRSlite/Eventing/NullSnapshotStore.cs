@@ -12,7 +12,7 @@ namespace CQRSlite.Eventing
 
         public void Save(Snapshot snapshot)
         {
-            
+
         }
     }
 }
